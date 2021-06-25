@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { ClasseController } from "../controllers/ClasseController";
+import { CarroController } from "../controllers/CarroController";
 
 const router = Router();
-const classeController = new ClasseController();
+const carroController = new CarroController();
 
-router.post("/classe/cadastrar", classeController.cadastrar);
-router.get("/classe/listar", classeController.listar);
+router.post("/carro/cadastrar", carroController.cadastrar);
+router.get("/carro/listar", carroController.listar);
 
 export { router };
